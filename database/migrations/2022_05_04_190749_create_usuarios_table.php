@@ -19,7 +19,7 @@ class CreateUsuariosTable extends Migration
             $table->string('apellido');
             $table->string('email');
             $table->string('birthdate');
-            //$table->timestamps();
+            $table->timestamps();
         });
     }
 

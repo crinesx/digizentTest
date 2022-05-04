@@ -14,4 +14,8 @@ class Usuarios extends Model
     public function adress(){
         return $this->hasMany('App\Models\Direcciones');
     }
+
+    public function getpriority(){
+        return $this->hasMany('App\Models\Direcciones')->where('priority', 1);    
+    }
 }

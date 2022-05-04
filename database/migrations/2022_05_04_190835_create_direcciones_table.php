@@ -20,7 +20,7 @@ class CreateDireccionesTable extends Migration
             $table->string('Estado');
             $table->Integer('priority');
             $table->unsignedBigInteger('usuarios_id');
-            //$table->timestamps();
+            $table->timestamps();
 
             $table->foreign('usuarios_id')->references('id')->on('usuarios');
         });
